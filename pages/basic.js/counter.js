@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { increase, decrease } from '@/modules/basic/counter';
-import { Counter } from '@/components/basic/Counter';
+import { increase, decrease } from '@/modules/common/counter';
+import { Counter } from '@/components/common/Counter';
 
 const CounterPage = ({ number, increase, decrease }) => {
   return (
