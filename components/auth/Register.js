@@ -90,43 +90,8 @@ export function Register({onChange, onSubmit}){
                   id="password"
                   onChange={onChange}
             
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
-                  required
-                  fullWidth
-                  name="phone"
-                  label="전화번호"
-                  type="text"
-                  id="phone"
-                  onChange={onChange}
-              
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
-                  required
-                  fullWidth
-                  name="birth"
-                  label="생년월일"
-                  type="text"
-                  id="birth"
-                  onChange={onChange}
-         
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
-                  required
-                  fullWidth
-                  name="address"
-                  label="주소"
-                  type="text"
-                  id="address"
-                  onChange={onChange}
-             
-                />
+                />         
+                
               </Grid>
               <Grid item xs={12}>
                 <FormControlLabel
