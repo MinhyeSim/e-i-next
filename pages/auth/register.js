@@ -7,7 +7,7 @@ import { useDispatch } from 'react-redux';
 const RegisterPage = () => {
   
   const [user, setUser] = useState({
-    userid:'', password:'', email:'', name:''
+    username:'', password:'', email:'', name:''
 })
   const dispatch = useDispatch()
 
@@ -28,7 +28,7 @@ const RegisterPage = () => {
       e.preventDefault()
       alert('회원가입정보:'+JSON.stringify(user))
       dispatch(registerRequest(user))
-      window.location.href = "./login"
+      //window.location.href = "./login"
 }
 
   return (

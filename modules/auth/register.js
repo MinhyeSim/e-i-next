@@ -40,7 +40,7 @@ function* signup(action) {
 }
 
 const registerAPI = payload => axios.post(
-    `${SERVER}/user/join`,
+    `${SERVER}/users/join`,
     payload,
     {headers}
 )

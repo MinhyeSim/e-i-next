@@ -46,10 +46,10 @@ export function Register({onChange, onSubmit}){
               <Grid item xs={12} sm={6} >
                 <TextField
                   autoComplete="given-name"
-                  name="userid"
+                  name="username"
                   required
                   fullWidth
-                  id="userid"
+                  id="username"
                   label="사용자ID"
                   autoFocus
                   onChange={onChange}

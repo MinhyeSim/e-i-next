@@ -38,15 +38,21 @@ function* signin(action){
         const response = yield call(loginAPI,action.payload)
         console.log(" 로그인 서버다녀옴: " + JSON.stringify(response.data))
         const result = response.data
-        yield put({type: LOGIN_SUCCESS, payload: result })
-        yield put({type: SAVE_TOKEN, payload: result.token })
+        if(result.token !== "FAILURE"){
+            console.log("로그인 성공: " + JSON.stringify(result))
+            yield put({type: LOGIN_SUCCESS, payload: result })
+            yield put({type: SAVE_TOKEN, payload: result.token })    
+        }else{
+            console.log("로그인 실패: " + JSON.stringify(result))
+        }
+        
     }catch(error){
         yield put({type:LOGIN_FAILURE, payload:error.message})
     }
 }
 
 const loginAPI = payload => axios.post(
-    `${SERVER}/user/login`,
+    `${SERVER}/users/login`,
     payload,
     {headers}
 )

@@ -73,13 +73,13 @@ export function Profile({loginUser}) {
                                     width: "100%"
                                 }}/>
                             <h1>
-                           {/*{loginUser.name}*/}
+                           {loginUser.name}
                             </h1>
-                           {/*} <p className="title">CEO & Founder, Example</p>
+                            <p className="title">CEO & Founder, Example</p>
                             <p>이메일 : {loginUser.email}</p>
                             <p>전화번호 : {loginUser.phone}</p>
                             <p>생년월일 : {loginUser.birth}</p>
-                            <p>주소 : {loginUser.address}</p>*/}
+                            <p>주소 : {loginUser.address}</p>
                             <div
                                 style={{
                                     margin: "24px 0"
