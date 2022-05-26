@@ -46,7 +46,7 @@ function* signin(action){
 }
 
 const loginAPI = payload => axios.post(
-    `${SERVER}/users/login`,
+    `${SERVER}/user/login`,
     payload,
     {headers}
 )
